@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import "./index.css"
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+
+
+    <div className='content'>
+      <h1 className='header'>To-Do List</h1>
+      <App />
+    </div>
   </React.StrictMode>,
 )
