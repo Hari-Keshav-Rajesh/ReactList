@@ -1,35 +1,36 @@
 import { v4 } from "uuid"
 
-const Form = ({value,setValue,List,setList}) => {
+function Form (props) {
 
     const onInput = (event) => {
-        setValue(event.target.value)
+        props.setValue(event.target.value)
     }
 
-    const onSubmit = () => {
-        setList([...List,{title:value,id:v4()}])
+    const onSubmit = (event) => {
+        event.preventDefault();
+        props.setList([...props.list,{title:props.value,id:v4()}])
     }
     
     return(
         <form onSubmit={onSubmit}
         className="formArea"
-        required
-        value={value}
-        setValue={setValue}
-        List={List}
-        setList={setList}
+        value={props.value}
+        onInput={onInput}
+        list={props.list}
         >
             <input
             className="formInput"
             type="text"
-            value={value}
+            value={props.value}
             placeholder="Enter a Task"
             onChange={onInput}
             />
 
             <button
             type="submit"
-            className="addButton">
+            className="addButton"
+            onSubmit={onSubmit}
+            >
             Add</button>
         </form>
     )

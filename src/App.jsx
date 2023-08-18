@@ -1,19 +1,23 @@
 import { useState } from 'react'
 import Form from './components/Form'
+import Content from './components/Content'
 
-const App = () =>{
+function App(){
   const [value, setValue] = useState('')
-  const [List, setList] = useState([])
+  const [list, setList] = useState([])
   
+  var formProps = { value, setValue, list, setList }
+  var contentProps = {list,setList} 
+
   return(
   <>
     <Form 
-    value={value}
-    setValue={setValue}
-    list={List}
-    setList={setList}
+    {...formProps}
+    />
+    <Content 
+    {...contentProps}
     />  
-  </>
+  </> 
   )
 }
 
