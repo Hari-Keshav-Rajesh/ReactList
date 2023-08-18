@@ -1,6 +1,6 @@
-import { v4 } from "uuid"
+import { v4 } from "uuid";
 
-function Form (props) {
+const Form = (props) => {
 
     const onInput = (event) => {
         props.setValue(event.target.value)
@@ -9,14 +9,13 @@ function Form (props) {
     const onSubmit = (event) => {
         event.preventDefault();
         props.setList([...props.list,{title:props.value,id:v4()}])
+        props.setValue("")
     }
     
     return(
         <form onSubmit={onSubmit}
         className="formArea"
-        value={props.value}
-        onInput={onInput}
-        list={props.list}
+
         >
             <input
             className="formInput"
