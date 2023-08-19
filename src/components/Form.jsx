@@ -10,31 +10,33 @@ const Form = (props) => {
     const onSubmit = (event) => {
         event.preventDefault();
         if(props.value.trim()!==""){
-        props.setList([...props.list,{title:props.value,id:v4()}])
+        props.setList([...props.list,{title:props.value,id:v4(),finish:false,buttonText:"Finish Task"}])
         props.setValue("")
         }
     }
     
     return(
-        <form onSubmit={onSubmit}
-        className="formArea"
+        <div className="formWrapper">
+                <form onSubmit={onSubmit}
+            className="formArea">
 
-        >
-            <input
-            className="formInput"
-            type="text"
-            value={props.value}
-            placeholder="Enter a Task"
-            onChange={onInput}
-            />
-
-            <button
-            type="submit"
-            className="addButton"
-            onSubmit={onSubmit}
-            >
-            Add</button>
-        </form>
+                <input
+                className="formInput"
+                type="text"
+                value={props.value}
+                placeholder="Enter a Task"
+                onChange={onInput}
+                />
+                
+                <button
+                type="submit"
+                className="addButton"
+                onSubmit={onSubmit}
+                >
+                Confirm</button>
+            </form>
+            <h2 className="subHeader">List of Tasks</h2>
+        </div>
     )
 }
 

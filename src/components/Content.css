@@ -5,10 +5,17 @@
 }
 
 .elementList{
-    background-color: #F34C19;
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+}
+
+.inside{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    gap: 15vh;
+    min-width: 60vh;
     padding: 2vh;
     border-color: #4299e1;
     border-style: solid; 
@@ -18,11 +25,6 @@
 .titleList{
     font-style: italic;
     font-size: 3vh;
-}
-
-.buttonsList{
-    display: flex;
-    gap: 1.5vh;
 }
 
 .delete{
@@ -45,7 +47,7 @@
     cursor: pointer;  
     line-height: 1vh; 
     height: 4vh;
-    width: 8vh;
+    width: 15vh;
     font-size: 2vh;     
 }
 
