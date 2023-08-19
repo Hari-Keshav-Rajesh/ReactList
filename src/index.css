@@ -2,4 +2,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ABD699;
+}
+
+.header{
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    padding: 5vh;
 }

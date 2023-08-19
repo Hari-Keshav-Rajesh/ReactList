@@ -1,4 +1,5 @@
 import { v4 } from "uuid";
+import "./form.css"
 
 const Form = (props) => {
 
@@ -8,8 +9,10 @@ const Form = (props) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
+        if(props.value.trim()!==""){
         props.setList([...props.list,{title:props.value,id:v4()}])
         props.setValue("")
+        }
     }
     
     return(
