@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Form from './components/Form'
 import Content from './components/Content'
-import "./App.css"
 
 function App(){
   const [value, setValue] = useState('')

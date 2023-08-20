@@ -24,3 +24,19 @@
     border-color: #4299e1;
     border-radius: .5vh;
 }
+
+.deleteAll{
+    background-color: #c70000;
+    color: wheat;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1vh;
+    height: 4vh;
+    width: 15vh;
+    font-size: 2vh;
+}
+
+.subHeader{
+    color: white;
+}

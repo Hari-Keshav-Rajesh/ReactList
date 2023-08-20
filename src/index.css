@@ -2,7 +2,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ABD699;
+    background: url("https://cutewallpaper.org/21/background-gif-html/15-CSS-Animated-Backgrounds-Pintire.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header{
@@ -10,4 +12,25 @@ body{
     font-weight: bold;
     text-align: center;
     padding: 5vh;
+    font-family:'Times New Roman', Times, serif
+}
+
+
+
+.legendDesc{
+    margin-top: 10vh;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.yellow{
+    height: 2vh;
+    width: 2vh;
+    background-color: #FFE800;
+}
+
+.green{
+    height: 2vh;
+    width: 2vh;
+    background-color: #86DC3D;
 }

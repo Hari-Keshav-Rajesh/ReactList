@@ -6,10 +6,10 @@ const Content = (props) => {
         props.setList(props.list.map((list) => {
             if(list.id===id){
                 if(list.finish===true){
-                    return {...list,finish:false,buttonText:"Finish Task"}
+                    return {...list,finish:false,buttonText:"Task Finished"}
                 }
                 else{
-                    return {...list,finish:true,buttonText:"Redo Task"}
+                    return {...list,finish:true,buttonText:"Relist Task"}
                 }
             }
             else{
@@ -30,7 +30,7 @@ const Content = (props) => {
                     <li className="elementList" key={list.id}>
                         <div className="inside"
                             style={{
-                                backgroundColor: list.finish?"blue":"red"
+                                backgroundColor: list.finish?"#86DC3D":"#FFE800"
                             }}
                         >
                             <div className="titleList">{index+1}) {list.title}</div>
@@ -43,7 +43,7 @@ const Content = (props) => {
                         <button 
                             className="delete"
                             onClick={() => removeKey(list.id)}>
-                                Delete
+                                Delete Task
                         </button>                             
                     </li>
                 )

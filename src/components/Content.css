@@ -35,12 +35,12 @@
     cursor: pointer;
     line-height: 1vh;
     height: 4vh;
-    width: 8vh;
+    width: 15vh;
     font-size: 2vh;
 }
 
 .finish{
-    background-color: #06c258;
+    background-color: #4299e1;
     font-weight: bold;
     color: wheat;
     display: inline-block;

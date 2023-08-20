@@ -10,9 +10,13 @@ const Form = (props) => {
     const onSubmit = (event) => {
         event.preventDefault();
         if(props.value.trim()!==""){
-        props.setList([...props.list,{title:props.value,id:v4(),finish:false,buttonText:"Finish Task"}])
+        props.setList([...props.list,{title:props.value,id:v4(),finish:false,buttonText:"Task Finished"}])
         props.setValue("")
         }
+    }
+
+    const onDeleteAll = () => {
+        props.setList([])
     }
     
     return(
@@ -24,7 +28,7 @@ const Form = (props) => {
                 className="formInput"
                 type="text"
                 value={props.value}
-                placeholder="Enter a Task"
+                placeholder="Enter Your Task"
                 onChange={onInput}
                 />
                 
@@ -34,6 +38,12 @@ const Form = (props) => {
                 onSubmit={onSubmit}
                 >
                 Confirm</button>
+
+                <button className="deleteAll"
+                onClick={onDeleteAll}>
+                Delete All
+                </button>
+
             </form>
             <h2 className="subHeader">List of Tasks</h2>
         </div>
