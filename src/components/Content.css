@@ -47,7 +47,7 @@
     cursor: pointer;  
     line-height: 1vh; 
     height: 4vh;
-    width: 15vh;
+    min-width: 15vh;
     font-size: 2vh;     
 }
 
