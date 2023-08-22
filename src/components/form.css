@@ -1,42 +1,42 @@
-.formArea{
-    display: flex;
-    gap:2vh;
+.formArea {
+  display: flex;
+  gap: 2vh;
 }
 
-.formInput{
-    width:60vh;
-    height: 4vh;
-    background-color: lightgrey;
-    font-size: 3vh;
-    margin-bottom: 3vh;
+.formInput {
+  width: 60vh;
+  height: 4vh;
+  background-color: lightgrey;
+  font-size: 3vh;
+  margin-bottom: 3vh;
 }
 
-.addButton{
-    display: inline-block;
-    cursor: pointer;
-    height: 4vh;
-    width: 10vh;
-    background-color: #4299e1;
-    font-size: 2vh;
-    color: white;
-    font-weight: bold;
-    line-height: 2.8vh;
-    border-color: #4299e1;
-    border-radius: .5vh;
+.addButton {
+  display: inline-block;
+  cursor: pointer;
+  height: 4vh;
+  width: 10vh;
+  background-color: #4299e1;
+  font-size: 2vh;
+  color: white;
+  font-weight: bold;
+  line-height: 2.8vh;
+  border-color: #4299e1;
+  border-radius: 0.5vh;
 }
 
-.deleteAll{
-    background-color: #c70000;
-    color: wheat;
-    font-weight: bold;
-    display: inline-block;
-    cursor: pointer;
-    line-height: 1vh;
-    height: 4vh;
-    width: 15vh;
-    font-size: 2vh;
+.deleteAll {
+  background-color: #c70000;
+  color: wheat;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1vh;
+  height: 4vh;
+  width: 15vh;
+  font-size: 2vh;
 }
 
-.subHeader{
-    color: white;
+.subHeader {
+  color: white;
 }

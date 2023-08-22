@@ -1,53 +1,52 @@
-.List{
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
+.List {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 
-.elementList{
-    display: flex;
-    gap: 2vh;
-    align-items: center;
+.elementList {
+  display: flex;
+  gap: 2vh;
+  align-items: center;
 }
 
-.inside{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 15vh;
-    min-width: 60vh;
-    padding: 2vh;
-    border-color: #4299e1;
-    border-style: solid; 
-    border-width: 1vh;
+.inside {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 15vh;
+  min-width: 60vh;
+  padding: 2vh;
+  border-color: #4299e1;
+  border-style: solid;
+  border-width: 1vh;
 }
 
-.titleList{
-    font-style: italic;
-    font-size: 3vh;
+.titleList {
+  font-style: italic;
+  font-size: 3vh;
 }
 
-.delete{
-    background-color: #c70000;
-    color: wheat;
-    font-weight: bold;
-    display: inline-block;
-    cursor: pointer;
-    line-height: 1vh;
-    height: 4vh;
-    width: 15vh;
-    font-size: 2vh;
+.delete {
+  background-color: #c70000;
+  color: wheat;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1vh;
+  height: 4vh;
+  width: 15vh;
+  font-size: 2vh;
 }
 
-.finish{
-    background-color: #4299e1;
-    font-weight: bold;
-    color: wheat;
-    display: inline-block;
-    cursor: pointer;  
-    line-height: 1vh; 
-    height: 4vh;
-    min-width: 15vh;
-    font-size: 2vh;     
+.finish {
+  background-color: #4299e1;
+  font-weight: bold;
+  color: wheat;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1vh;
+  height: 4vh;
+  min-width: 15vh;
+  font-size: 2vh;
 }
-
